@@ -35,8 +35,8 @@ st.set_page_config(page_title="Humanizer Pro", layout="wide")
 st.title("🛡️ AI Humanizer & Plagiarism Checker")
 
 # Retrieve keys from "Secrets" (Setup in Step 4)
-openai_api_key = st.secrets["OPENAI_API_KEY"]
-deepseek_api_key = st.secrets["DEEPSEEK_API_KEY"]
+openai_api_key = st.secrets["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"]
+deepseek_api_key = st.secrets["sk-5bdbd504edb7496a90b8bb6b7cde541b"]
 
 input_text = st.text_area("Paste your content here:", height=250)
 
@@ -54,3 +54,4 @@ if st.button("Humanize & Check"):
             st.write(result)
     else:
         st.error("Please enter text first.")
+
